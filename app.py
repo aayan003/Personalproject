@@ -85,7 +85,7 @@ with st.sidebar:
 
     
  
-    st.write("Also, sometimes the AI wil be stubborn and just refuse to listen. In that case relaoding will also help, and most likely also provide a correct answer.")
+    st.write("Also, sometimes the AI wil be stubborn and just refuse to listen. In that case reloading will also help, and most likely also provide a correct answer.")
 
     
  
