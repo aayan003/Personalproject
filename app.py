@@ -70,7 +70,7 @@ def get_response(user_input):
     return response['answer']
    
 #app config
-st.set_page_config(page_title="Blindern IB AI", page_icon="📎")
+st.set_page_config(page_title="Blindern IB AI", page_icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwSKwMRFTf_05ETkNe_zE6Bd91Xh6C-ty8uQ&s")
 st.title("Blindern IB AI")
 
 #sidebar
@@ -86,7 +86,8 @@ with st.sidebar:
     "https://blindern.vgs.no/ib/middle-years-programme/information/",
     "https://blindern.vgs.no/ib/ib-news/school-regulations/",
     "https://blindern.vgs.no/ib/ib-news/statements-from-former-ib-students/",
-    "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/"]
+    "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/",
+    "https://www.ibo.org/programmes/middle-years-programme/"]
 )
 
  
