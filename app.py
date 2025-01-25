@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from PyPDF2 import PdfReader
+
 
 load_dotenv()
  
@@ -73,20 +73,21 @@ def get_response(user_input):
 st.set_page_config(page_title="Blindern IB AI", page_icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwSKwMRFTf_05ETkNe_zE6Bd91Xh6C-ty8uQ&s")
 st.title("Blindern IB AI")
 
-
-website_urls = (
-  ["https://blindern.vgs.no/ib/ib-information/are-you-interested-in-ib/",
-  "https://blindern.vgs.no/ib/ib-information/our-policies/",
-  "https://blindern.vgs.no/ib/diploma-programme/information/",
-  "https://blindern.vgs.no/ib/diploma-programme/dp-subjects-offer/",
-  "https://blindern.vgs.no/ib/middle-years-programme/curriculum-overview/",
-  "https://blindern.vgs.no/ib/middle-years-programme/information-for-applicants/",
-  "https://blindern.vgs.no/ib/middle-years-programme/information/",
-  "https://blindern.vgs.no/ib/ib-news/school-regulations/",
-  "https://blindern.vgs.no/ib/ib-news/statements-from-former-ib-students/",
-  "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/",
-  "https://www.ibo.org/programmes/middle-years-programme/"]
-)
+#sidebar
+with st.sidebar:
+    st.header("Settings")
+    website_urls = (
+    ["https://blindern.vgs.no/ib/ib-information/are-you-interested-in-ib/",
+    "https://blindern.vgs.no/ib/ib-information/our-policies/",
+    "https://blindern.vgs.no/ib/diploma-programme/information/",
+    "https://blindern.vgs.no/ib/diploma-programme/dp-subjects-offer/",
+    "https://blindern.vgs.no/ib/middle-years-programme/curriculum-overview/",
+    "https://blindern.vgs.no/ib/middle-years-programme/information-for-applicants/",
+    "https://blindern.vgs.no/ib/middle-years-programme/information/",
+    "https://blindern.vgs.no/ib/ib-news/school-regulations/",
+    "https://blindern.vgs.no/ib/ib-news/statements-from-former-ib-students/",
+    "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/",
+    "https://www.ibo.org/programmes/middle-years-programme/"]
 
  
 
