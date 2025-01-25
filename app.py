@@ -88,6 +88,7 @@ with st.sidebar:
     "https://blindern.vgs.no/ib/ib-news/statements-from-former-ib-students/",
     "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/",
     "https://www.ibo.org/programmes/middle-years-programme/"]
+    )
 
  
 
