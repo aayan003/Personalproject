@@ -12,7 +12,21 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 
 
 load_dotenv()
- 
+
+website_urls = (
+    ["https://blindern.vgs.no/ib/ib-information/are-you-interested-in-ib/",
+    "https://blindern.vgs.no/ib/ib-information/our-policies/",
+    "https://blindern.vgs.no/ib/diploma-programme/information/",
+    "https://blindern.vgs.no/ib/diploma-programme/dp-subjects-offer/",
+    "https://blindern.vgs.no/ib/middle-years-programme/curriculum-overview/",
+    "https://blindern.vgs.no/ib/middle-years-programme/information-for-applicants/",
+    "https://blindern.vgs.no/ib/middle-years-programme/information/",
+    "https://blindern.vgs.no/ib/ib-news/school-regulations/",
+    "https://blindern.vgs.no/ib/ib-news/statements-from-former-ib-students/",
+    "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/",
+    "https://www.ibo.org/programmes/middle-years-programme/"]
+    )
+
 #functions
 def get_vectorstore_from_urls(urls):
     #get the text in document form
