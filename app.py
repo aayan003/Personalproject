@@ -78,7 +78,7 @@ with st.sidebar:
     st.header("My personal project")
     st.write("So, this is my personal project. Its an RAG LLM, which has specific access to the webpages that are on the schools webpage. Its purpose is to make it easier to answer questions for potential IB applicants for the school, since the the schools website can be annoying to navigate sometimes. And its just simpler.")
 
-    st.write("NB! Please reload the website after you have asked a question on a topic, and you're moving onto a different topic. There is a limitation where it (the AI) does not take in more information than one link, so it will answer incorrectly of you don't. (This doesn't alwasy happen, but it's a precaution you could take to avoid getting the wrong info.")
+    st.write("NB! Please reload the website after you have asked a question on a topic, and you're moving onto a different topic. There is a limitation where it (the AI) does not take in more information than one link, so it will answer incorrectly of you don't. (This doesn't alwasy happen, but it's a precaution you could take to avoid getting the wrong info.)")
 
     st.write("Also, sometimes the AI wil be stubborn and just refuse to listen. In that case relaoding will also help, and most likely also provide a correct answer.")
     website_urls = (
