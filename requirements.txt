@@ -2,7 +2,6 @@ langchain==0.3.15
 langchain_community==0.3.15
 langchain_core==0.3.31
 langchain_openai==0.3.2
-PyPDF2==3.0.1
 python-dotenv==1.0.1
 streamlit==1.37.1
 beautifulsoup4==4.12.3
