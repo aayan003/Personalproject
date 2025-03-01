@@ -128,11 +128,11 @@ st.title("Blindern IB AI")
 #sidebar
 with st.sidebar:
     st.header("My personal project")
-    st.write("So, this is my personal project. Its an RAG LLM, which has specific access to the webpages that are on the schools webpage (related to IB). Its purpose is to make it easier to answer questions for potential IB applicants for the school, since the the schools website can be annoying to navigate sometimes. And its just simpler. Finally, this would never be deployed to a proper customer in the state that it is in now, since it is not perfect and sometimes gives wrong answers.")
+    st.write("So, this is my personal project. Its an RAG LLM, which has specific access to the webpages that are on the schools webpage (related to IB). Its purpose is to make it easier to answer questions for potential IB applicants for the school, since it is sometimes difficult to get answers from the schools website. Finally, this would never be deployed to a proper customer in the state that it is in now.")
 
     st.write("NB! The AI is not perfect, and sometimes it may not give the correct answer. In that case, try reloading the page and asking the question again. There will be a higher chance of the answer being correct. (if you want)")
 
-    st.write("Also, sometimes the AI wil be stubborn and just refuse to listen. In that case reloading will also help, and most likely also provide a correct answer. (if you want)")
+    st.write("Also, sometimes the AI may be stubborn and just refuse to listen. In that case reloading will also help, and may also provide a correct answer.")
 
     st.write("Finally, some answers may be wrong or formatted weird, in that case try again or give it a push in the correct direction. (if you want)")
    
