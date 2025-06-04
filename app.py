@@ -128,14 +128,20 @@ st.title("Blindern IB AI")
 #sidebar
 with st.sidebar:
     st.header("My personal project")
-    st.write("So, this is my personal project. Its an RAG LLM, which has specific access to the webpages that are on the schools webpage (related to IB). Its purpose is to make it easier to answer questions for potential IB applicants for the school, since it is sometimes difficult to get answers from the schools website. Finally, this would never be deployed to a proper customer in the state that it is in now.")
+    st.write("So, this is my personal project. Its an RAG LLM, which has specific access to the webpages that are on the schools webpage (related to IB). Its purpose is to make it easier to answer questions for potential IB applicants for the school, since the the schools website can be annoying to navigate sometimes. And its just simpler.")
 
-    st.write("NB! The AI is not perfect, and sometimes it may not give the correct answer. In that case, try reloading the page and asking the question again. There will be a higher chance of the answer being correct. (if you want)")
+    
+ 
 
-    st.write("Also, sometimes the AI may be stubborn and just refuse to listen. In that case reloading will also help, and may also provide a correct answer.")
+    st.write("NB! Please reload the website after you have asked a question on a topic, and you're moving onto a different topic. There is a limitation where it (the AI) does not take in more information than one link, so it will answer incorrectly of you don't. (This doesn't always happen, but it's a precaution you could take to avoid getting the wrong info.)")
 
-    st.write("Finally, some answers may be wrong or formatted weird, in that case try again or give it a push in the correct direction. (if you want)")
-   
+    
+ 
+    st.write("Also, sometimes the AI wil be stubborn and just refuse to listen. In that case reloading will also help, and most likely also provide a correct answer.")
+
+    
+ 
+    st.write("Finally, some answers may be wrong or formatted weird, in that case maybe try again or just don't your choice ig.")
     website_urls = (
     ["https://blindern.vgs.no/ib/ib-information/are-you-interested-in-ib/",
     "https://blindern.vgs.no/ib/ib-information/our-policies/",
@@ -146,7 +152,8 @@ with st.sidebar:
     "https://blindern.vgs.no/ib/middle-years-programme/information/",
     "https://blindern.vgs.no/ib/ib-news/school-regulations/",
     "https://blindern.vgs.no/ib/ib-news/statements-from-former-ib-students/",
-    "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/"]
+    "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/",
+    "https://www.ibo.org/programmes/middle-years-programme/"]
     )
 
  
