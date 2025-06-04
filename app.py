@@ -10,7 +10,20 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from fuzzywuzzy import process, fuzz
+import certifi
+import requests
 
+def fetch_ibo_page():
+    url = "https://www.ibo.org/programmes/middle-years-programme/"
+    try:
+        r = requests.get(url, timeout=10, verify=certifi.where())
+        r.raise_for_status()
+        return r.text
+    except requests.exceptions.SSLError as e:
+        print("SSL verification failed:", e)
+        # handle it (e.g., retry, log, or fallback)
+    except Exception as e:
+        print("Other error:", e)
 # Predefined Q&A dictionary
 predefined_answers = {
     "How do I apply?": "MYP4- complete the digital application on our website before April 1st. \n\nMYP5- complete the digital application on our website before March 1st. In addition, you must complete the vigo application and MYP5 Blindern must be your first choice.",
