@@ -50,6 +50,8 @@ predefined_answers = {
 
 load_dotenv()
 
+ChatOpenAI.model_rebuild()
+llm = ChatOpenAI()
 
 #functions
 def get_vectorstore_from_urls(urls):
