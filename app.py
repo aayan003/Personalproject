@@ -10,10 +10,6 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from fuzzywuzzy import process, fuzz
-from pydantic import BaseModel
-
-class BaseCache(BaseModel):
-    pass
 
 # Predefined Q&A dictionary
 predefined_answers = {
@@ -54,8 +50,6 @@ predefined_answers = {
 
 load_dotenv()
 
-ChatOpenAI.model_rebuild()
-llm = ChatOpenAI()
 
 #functions
 def get_vectorstore_from_urls(urls):
@@ -158,7 +152,8 @@ with st.sidebar:
     "https://blindern.vgs.no/ib/middle-years-programme/information/",
     "https://blindern.vgs.no/ib/ib-news/school-regulations/",
     "https://blindern.vgs.no/ib/ib-news/statements-from-former-ib-students/",
-    "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/",]
+    "https://blindern.vgs.no/ib/ib-news/konkurransen-unge-forskere/",
+    "https://www.ibo.org/programmes/middle-years-programme/"]
     )
 
  
