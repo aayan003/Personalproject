@@ -10,6 +10,10 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from fuzzywuzzy import process, fuzz
+from pydantic import BaseModel
+
+class BaseCache(BaseModel):
+    pass
 
 # Predefined Q&A dictionary
 predefined_answers = {
